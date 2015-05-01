@@ -1,0 +1,20 @@
+[
+    {
+        "remote": "omnirom",
+        "repository": "android_device_CherryMobile_msm8960-common",
+        "target_path": "device/CherryMobile/msm8960-common",
+        "revision": "android-4.3"
+    },
+    {
+        "remote": "omnirom",
+        "repository": "android_device_CherryMobile_Ultra-common",
+        "target_path": "device/CherryMobile/Ultra-common",
+        "revision": "android-4.3"
+    },
+    {
+        "remote": "omnirom",
+        "repository": "android_kernel_CherryMobile_Ultra",
+        "target_path": "kernel/CherryMobile/Ultra",
+        "revision": "android-4.3"
+    }
+]
