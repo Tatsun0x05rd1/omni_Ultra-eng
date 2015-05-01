@@ -18,3 +18,5 @@
         "revision": "android-4.3"
     }
 ]
+
+/*flattened device tree is MSM8226 though the target is MSM8960. This file was ignored before compilation*/
