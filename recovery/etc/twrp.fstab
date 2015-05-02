@@ -1,20 +1,23 @@
-/system ext4 /dev/block/platform/msm_sdcc.1/by-name/system 0
-/cache ext4 /dev/block/platform/msm_sdcc.1/by-name/cache 0
-/data ext4 /dev/block/platform/msm_sdcc.1/by-name/userdata length=-16384
-/sdcard vfat /dev/block/mmcblk1p1 flags=display="Internal SDcard";storage;wipeingui;removable
-/boot emmc /dev/block/platform/msm_sdcc.1/by-name/boot
-/recovery emmc /dev/block/platform/msm_sdcc.1/by-name/recovery
-/misc emmc /dev/block/platform/msm_sdcc.1/by-name/misc
-/sdcard1 vfat /dev/block/platform/msm_sdcc.1/by-name/usbmsc flags=display="External SDcard";storage;wipeingui;removable
-/aboot emmc /dev/block/platform/msm_sdcc.1/by-name/aboot
-/abootbak emmc /dev/block/platform/msm_sdcc.1/by-name/abootbak
-/modem emmc /dev/block/platform/msm_sdcc.1/by-name/modem
-/rpm emmc /dev/block/platform/msm_sdcc.1/by-name/rpm
-/rpmbak emmc /dev/block/platform/msm_sdcc.1/by-name/rpmbak
-/sbl1 emmc /dev/block/platform/msm_sdcc.1/by-name/sbl1
-/sbl1bak emmc /dev/block/platform/msm_sdcc.1/by-name/sbl1bak
-/sdi emmc /dev/block/platform/msm_sdcc.1/by-name/sdi
-/tz emmc /dev/block/platform/msm_sdcc.1/by-name/tz
-/tzbak emmc /dev/block/platform/msm_sdcc.1/by-name/tzbak
-/persist ext4 /dev/block/platform/msm_sdcc.1/by-name/persist
-/tmp ramdisk ramdisk
+/system      ext4      /dev/block/platform/msm_sdcc.1/by-name/system
+/cache       ext4      /dev/block/platform/msm_sdcc.1/by-name/cache
+/data        ext4      /dev/block/platform/msm_sdcc.1/by-name/userdata      length=-16384
+/sdcard      vfat      /dev/block/mmcblk1p1                                 nosuid,nodev,barrier=1,data=ordered,nodelalloc       wait;flags=display="Internal SDcard";storage;wipeingui;removable
+/boot        emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery    emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
+/misc        emmc      /dev/block/platform/msm_sdcc.1/by-name/misc
+/sdcard1     vfat      /dev/block/platform/msm_sdcc.1/by-name/usbmsc        nosuid,nodev,barrier=1,data=ordered,nodelalloc       flags=display="External SDcard";storage;wipeingui;removable
+/aboot       emmc      /dev/block/platform/msm_sdcc.1/by-name/aboot
+/abootbak    emmc      /dev/block/platform/msm_sdcc.1/by-name/abootbak
+/modem       emmc      /dev/block/platform/msm_sdcc.1/by-name/modem
+/efs1        emmc      /dev/block/platform/msm_sdcc.1/by-name/modemst1      flags=backup=1;display=EFS
+/efs2        emmc      /dev/block/platform/msm_sdcc.1/by-name/modemst2      flags=backup=1;subpartitionof=/efs1
+/rpm         emmc      /dev/block/platform/msm_sdcc.1/by-name/rpm
+/rpmbak      emmc      /dev/block/platform/msm_sdcc.1/by-name/rpmbak
+/sbl1        emmc      /dev/block/platform/msm_sdcc.1/by-name/sbl1
+/sbl1bak     emmc      /dev/block/platform/msm_sdcc.1/by-name/sbl1bak
+/sdi         emmc      /dev/block/platform/msm_sdcc.1/by-name/sdi
+/splash      emmc      /dev/block/platform/msm_sdcc.1/by-name/splash        flags=backup=1;display=Splash_(Boot)_Picture
+/tz          emmc      /dev/block/platform/msm_sdcc.1/by-name/tz
+/tzbak       emmc      /dev/block/platform/msm_sdcc.1/by-name/tzbak
+/persist     ext4      /dev/block/platform/msm_sdcc.1/by-name/persist
+/tmp         ramdisk   ramdisk
